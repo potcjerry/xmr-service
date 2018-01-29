@@ -1,0 +1,8 @@
+[Unit]
+Description=xmr
+After=network.target
+[Service]
+ExecStart=/usr/local/src/xmr-stak-cpu/bin/xmr-stak-cpu -c /usr/local/src/xmr-stak-cpu/bin/config.txt
+User=joel
+[Install]
+WantedBy=multi-user.target
